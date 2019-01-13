@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+
+body,
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  position: relative;
+}
+
+.search {
+  background: none;
+  border-bottom: 1px solid white;
+  color: white;
+  text-align: center;
+  font-weight: 300;
+}
+
+#bg {
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background: {
+    repeat: none;
+    size: cover;
+  }
+  filter: blur(40px);
+  transform: scale(1.2);
+}
+
+.movie-info {
+  background-color: rgba(255, 255, 255, 0.611);
+  border-radius: 10px;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+
+  h1 {
+    font-weight: 600;
+  }
+
+  #votes {
+    font-weight: 600;
+
+    i {
+      margin-right: 0.5vw;
+    }
+  }
+
+  #genres {
+    font-style: italic;
+  }
+}
+
+.boxshadow {
+  box-shadow: 0 0 25px 10px #00000025;
+}
+
+@media only screen and (max-width: 991px) {
+  body,
+  html {
+    overflow-y: visible;
+  }
+}
