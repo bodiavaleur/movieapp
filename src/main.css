@@ -99,6 +99,10 @@ body {
   height: 85%;
 }
 
+.movie-info #movieDetails::-webkit-scrollbar {
+  display: none;
+}
+
 .movie-info #movieDetails h1 {
   font-weight: 600;
 }
